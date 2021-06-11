@@ -1,3 +1,8 @@
+// Change image on click
+function imgSlider(anything) {
+    document.querySelector('.fruits').src = anything;
+}
+
 // Add active class in selected thumbails
 
 let el = document.querySelectorAll('.thumb li');
