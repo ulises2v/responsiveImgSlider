@@ -114,6 +114,7 @@ header .navigation li a:hover {
     font-size: 4em;
     line-height: 1.2em;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .content .textBox p {
@@ -165,6 +166,49 @@ header .navigation li a:hover {
     border: .2rem solid rgba(255, 255, 255, 0.25);
 }
 
+.thumb li.active {
+    border: .2rem solid rgba(255, 255, 255, 1);
+}
+
+.thumb li::before {
+    position: absolute;
+    top: -20rem;
+    left: -10rem;
+    content: attr(data-text);
+    white-space: nowrap;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.thumb li.active::before {
+    opacity: 1;
+}
+
 .thumb li img {
-    max-width: 5rem;
+    max-width: 6rem;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: .5rem 0;
+    transform: scale(0.6);
+    filter: invert();
 }
