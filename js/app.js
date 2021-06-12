@@ -10,7 +10,6 @@ function changeBgColor(color) {
 }
 
 // Add active class in selected thumbails
-
 let el = document.querySelectorAll('.thumb li');
 
 for (let i = 0; i < el.length; i++) {
@@ -21,4 +20,12 @@ for (let i = 0; i < el.length; i++) {
         }
         el[i].className = 'check active';
     }
+}
+
+// Menú toggle
+let menuToggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+menuToggle.onclick = () => {
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
 }
