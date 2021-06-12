@@ -3,6 +3,12 @@ function imgSlider(anything) {
     document.querySelector('.fruits').src = anything;
 }
 
+// Change background color
+function changeBgColor(color) {
+    const bg = document.querySelector('.bg');
+    bg.style.background = color;
+}
+
 // Add active class in selected thumbails
 
 let el = document.querySelectorAll('.thumb li');
