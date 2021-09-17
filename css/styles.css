@@ -89,12 +89,14 @@ header .navigation li a {
     margin-left: 1rem;
     padding: .8rem 1.5rem;
     border-radius: 4rem;
+    transition: .5s;
 }
 
 header .navigation li a.active,
 header .navigation li a:hover {
     background: var(--color-white);
     color: var(--color-gray);
+    letter-spacing: .1rem;
 }
 
 .content {
